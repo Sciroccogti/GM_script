@@ -3023,9 +3023,8 @@ background-color: rgba(248,248,248, 0.3) !important; /*百度搜索块体 - 标�
     })();
 
     if (window.location.href.match(/www\.bing\.com/) || window.location.href.match(/cn\.bing\.com/)) {
-        if (document.getElementById('dynamicMap_7')) {
-            document.getElementById('dynamicMap_7').style.width = "auto";
+        if (document.getElementsByClassName('dynMap')[0]) {
+            document.getElementsByClassName('dynMap')[0].style.width = "auto";
         }
-        console.log("map wdith modified");
     }
 }();
